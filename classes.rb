@@ -1,6 +1,6 @@
 class Person
-  def initialize(id, name, age, parent_permission)
-    @id = id
+  def initialize(age, name = 'Unknown', parent_permission: true)
+    @id = rand(1..1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
@@ -17,13 +17,13 @@ class Person
   public
 
   def can_use_services?
-    of_age? == true
+    of_age? || parent_permission
   end
 end
 
 class Student < Person
-  def initialize(id, name, age, parent_permission, classroom)
-    super(id, name, age, parent_permission)
+  def initialize(age, classroom, name = 'Unknown', parent_permission: true)
+    super(age, name: name, parent_permission: parent_permission)
     @classroom = classroom
   end
 
@@ -33,8 +33,8 @@ class Student < Person
 end
 
 class Teacher < Person
-  def initialize(id, name, age, parent_permission, specialization)
-    super(id, name, age, parent_permission)
+  def initialize(age, specialization, name = 'Unknown', parent_permission: true)
+    super(age, name: name, parent_permission: parent_permission)
     @specialization = specialization
   end
 
@@ -43,5 +43,5 @@ class Teacher < Person
   end
 end
 
-Person1 = Person.new(1, 'john', 12, false)
+Person1 = Person.new(12, 'name')
 print Person1.name
