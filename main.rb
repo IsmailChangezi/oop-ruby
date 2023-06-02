@@ -1,14 +1,58 @@
-require_relative 'classes/nameable'
-require_relative 'classes/person'
-require_relative 'classes/student'
-require_relative 'classes/teacher'
-require_relative 'classes/decorator'
-require_relative 'classes/capitalize_decorator'
-require_relative 'classes/trimmer_decorator'
+require_relative 'app'
 
-person = Person.new(22, 'maximilianus')
-puts person.correct_name
-puts capitalized_person = CapitalizeDecorator.new(person)
-puts capitalized_person.correct_name
-puts capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-puts capitalized_trimmed_person.correct_name
+def menu
+  system('cls')
+  system('clear')
+  puts '######################'
+  puts '# OOP SCHOOL LIBRARY #'
+  puts '######################'
+  puts "\nPlease choose an option by entering a number: "
+  puts '1 - List all books.'
+  puts '2 - List all people.'
+  puts '3 - Create a person,'
+  puts '4 - Create a book.'
+  puts '5 - Create a rental.'
+  puts '6 - List all rentals for a given person id.'
+  puts '7 - Exit'
+  op = gets.chomp.to_i
+  menu unless op < 8 && op.positive?
+  op
+end
+
+def wait
+  puts "\npress enter to continue"
+  gets.chomp
+end
+
+def start
+  app = App.new
+  loop do
+    case menu
+    when 1
+      app.all_books
+    when 2
+      app.all_people
+    when 3
+      app.create_person
+    when 4
+      app.create_book
+    when 5
+      app.create_rental
+    when 6
+      app.person_rentals
+    else
+      break
+    end
+    wait
+  end
+end
+
+def main
+  start
+  puts 'Thank you for using this app!'
+  wait
+  system('cls')
+  system('clear')
+end
+
+main
