@@ -30,7 +30,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Morse Code <a name="about-project"></a>
+# 📖 Ruby School Library <a name="about-project"></a>
 
 > Thisi is a School Library built on the methods of Object Oriented Programming with Ruby
 
@@ -50,7 +50,7 @@
 
 <!-- > Describe between 1-3 key features of the application. -->
 
-- **Decode Morse messages**
+- **Classifies School Library with Ruby**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,12 +85,12 @@ To install ruby go to : [Install Ruby](https://rubyinstaller.org/) and select yo
 
 ### Usage
 
-To run the project, open your project in your terminal and type ruby morse_decoder.rb .
+To run the project, open your project in your terminal and type ruby main.rb 
 
 Example command:
 
 ```sh
-  ruby morse_decoder.rb
+  ruby main.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -112,7 +112,7 @@ Example command:
 
 <!-- > Describe 1 - 3 features you will add to the project. -->
 
-- [ ] **Store the decoded message**
+- [ ] **Makes a libray for a school **
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
