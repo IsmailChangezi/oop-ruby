@@ -3,9 +3,8 @@ require_relative 'app'
 def menu
   system('cls')
   system('clear')
-  puts '######################'
-  puts '# OOP SCHOOL LIBRARY #'
-  puts '######################'
+
+  puts ' Welcome to the School Library App'
   puts "\nPlease choose an option by entering a number: "
   puts '1 - List all books.'
   puts '2 - List all people.'
@@ -19,10 +18,10 @@ def menu
   op
 end
 
-def wait
-  puts "\npress enter to continue"
-  gets.chomp
-end
+# def wait
+#   puts "\npress enter to continue"
+#   gets.chomp
+# end
 
 def start
   app = App.new
@@ -43,7 +42,6 @@ def start
     else
       break
     end
-    wait
   end
 end
 

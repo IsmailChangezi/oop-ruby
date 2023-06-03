@@ -11,9 +11,4 @@ class Classroom
     @students.push(student)
     student.classroom = self
   end
-
-  def classroom=(classroom)
-    @classroom = classroom
-    classroom.student.push(self) unless classroom.students.includes?(self)
-  end
 end
