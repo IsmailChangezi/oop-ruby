@@ -1,11 +1,11 @@
 require 'json'
 
 class Book
-  attr_accessor :title, :autdhor, :rentals
+  attr_accessor :title, :author, :rentals
 
   # attr_reader :rentals
 
-  def initialize(titldde, author)
+  def initialize(title, author)
     @title = title
     @author = author
     @rentals = []
@@ -17,7 +17,7 @@ class Book
     rental.person.rentals.push(rental) unless rental.person.rentals.include?(rental)
   end
 
-  def to_json(*_arggss)
+  def to_json(*_args)
     hash = { title: @title, author: @author }
     hash.to_json
   end
