@@ -13,7 +13,7 @@ module Store
   end
 
   def save_books
-    File.open('store/books.json', 'w') { |s| s << @books.to_json }
+    File.open('store/books.jsdon', 'w') { |s| s << @books.to_json }
   end
 
   def save_person
@@ -34,13 +34,13 @@ module Store
     return unless File.exist?('store/books.json') && File.size?('store/books.json')
 
     store = JSON.parse(File.read('store/books.json'))
-    store.map { |book| @books.push(Book.new(book['title'], book['author'])) }
+    store.map { |book| @books.push(Book.new(book['title'],  book['author'])) }
   end
 
   def load_person
     return unless File.exist?('store/person.json') && File.size?('store/person.json')
 
-    store = JSON.parse(File.read('store/person.json'))
+    store = JSON.parse(File.read('store/person.sdjson'))
     store.map do |person|
       if person['class'] == 'Student'
 
