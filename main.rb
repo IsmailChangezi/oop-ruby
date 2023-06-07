@@ -3,7 +3,7 @@ require_relative 'app'
 def menu
   system('cls')
   system('clear')
-  puts 'Welcome To The School Library App'
+  puts 'Welcome To School Library App'
   puts "\nPlease choose an option by entering a number: "
   puts '1 - List all books.'
   puts '2 - List all people.'
@@ -18,11 +18,11 @@ def menu
 end
 
 def wait
+  puts "\npress enter to continue"
   gets.chomp
 end
 
-def start
-  app = App.new
+def run_app(app)
   loop do
     case menu
     when 1
@@ -42,6 +42,12 @@ def start
     end
     wait
   end
+end
+
+def start
+  app = App.new
+  run_app(app)
+  app.save_data
 end
 
 def main

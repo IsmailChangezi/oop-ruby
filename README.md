@@ -2,9 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Ruby School Library</b></h3>
-  <p>by<p/>
-  <h2><b>Ismail Changezi</b></h2>
+  <h1><b>Ruby School Library</b></h1>
 
 </div>
 
@@ -104,6 +102,12 @@ Example command:
 - GitHub: [@IsmailChangezi](https://github.com/IsmailChangezi)
 - LinkedIn: [Ismail Changezi](https://www.linkedin.com/in/ismailchangezi/)
 
+👤 **Syed Atril**
+
+- GitHub: [@githubhandle](https://github.com/Atril33)
+- Twitter: [@twitterhandle](https://twitter.com/AtrilSyed)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/syed-atril-831696248/)
+- Facebook [Facebook](https://web.facebook.com/profile.php?id=100073724910623)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -112,7 +116,10 @@ Example command:
 
 <!-- > Describe 1 - 3 features you will add to the project. -->
 
-- [ ] **Makes a libray for a school **
+- [ ] **Makes a libray for a school**
+- [ ] **Advanced Search and Filtering**
+- [ ] **Book Recommendation Engine**
+- [ ] **Fine and Due Date Management**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
