@@ -119,6 +119,9 @@ Example command:
 <!-- > Describe 1 - 3 features you will add to the project. -->
 
 - [ ] **Makes a libray for a school **
+- [ ] **Advanced Search and Filtering**
+- [ ] **Book Recommendation Engine**
+- [ ] **Fine and Due Date Management**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
