@@ -2,9 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Ruby School Library</b></h3>
-  <p>by<p/>
-  <h2><b>Ismail Changezi</b></h2>
+  <h1><b>Ruby School Library</b></h1>
 
 </div>
 
