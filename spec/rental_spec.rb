@@ -22,23 +22,25 @@ class Book
   def initialize(title, author)
     @title = title
     @author = author
+    @rentals = []
   end
 end
 
 describe Rental do
   person = Person.new(22, 'israel ch')
   book = Book.new('Dead men no tell', 'Jack Sparrow')
+  rental = Rental.new('2023-02-08', book, person)
 
   context 'Testing the Rental class' do
     it 'creating an instance of the rental class' do
-      expect(rental).to be_instance_of(Rentals)
+      expect(rental).to be_instance_of(Rental)
     end
   end
 
   context 'Test the to_json method in Rental' do
     it 'passes the info as a json format to store' do
-      json_sample_data = '{"date":"2023-02-08",' 
-                         '"book":{"title":"Dead men no tell","author":"Jack Sparrow"},' 
+      json_sample_data = '{"date":"2023-02-08",' \
+                         '"book":{"title":"Dead men no tell","author":"Jack Sparrow"},' \
                          '"person":{"class":"Person","id":null,"name":"israel ch","age":22,"parent_permission":true}}'
       rental_obj = rental.to_json
       expect(rental_obj).to eq(json_sample_data)
