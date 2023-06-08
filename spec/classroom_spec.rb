@@ -38,14 +38,4 @@ describe Classroom do
       expect(classroom.students).to eq(array)
     end
   end
-
-  context 'Test the add students to the classroom' do
-    it 'adds a student to the array' do
-      classroom = Classroom.new('Languages')
-      student = Student.new(22, 'israel')
-      classroom.add_student(student)
-      array = [student]
-      expect(classroom.students).to eq(array)
-    end
-  end
 end
